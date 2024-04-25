@@ -8,7 +8,7 @@ const Header = () => {
 	return (
 		<nav className='flex items-center justify-between px-6 py-4 mb-5 bg-black'>
 			<div className='flex items-center'>
-				<Link href='/'>
+				<Link href={`${userId ? "/dashboard" : "/"}`}>
 					<div className='text-lg font-bold text-white uppercase'>
 						Clerk auth
 					</div>
@@ -33,11 +33,15 @@ const Header = () => {
 					</>
 				)}
 				{userId && (
-					<Link href='profile' className='text-gray-300 hover:text-white mr-4'>Profile</Link>
+					<>
+						<Link href="dashboard" className="text-gray-300 hover:text-white mr-4">Dashboard</Link>
+						<Link href='profile' className='text-gray-300 hover:text-white mr-4'>Profile</Link>
+						<div className="ml-auto">
+							<UserButton afterSignOutUrl="/" />
+						</div>
+					</>
 				)}
-				<div className="ml-auto">
-					<UserButton afterSignOutUrl="/" />
-				</div>
+
 			</div>
 		</nav>
 	);
