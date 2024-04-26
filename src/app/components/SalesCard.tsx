@@ -24,7 +24,7 @@ const SalesCard = (props: SalesCardProps) => {
 			</section>
 			<p>{props.saleAmount}</p>
 		</div>
-	)
-}
+	);
+};
 
 export default SalesCard

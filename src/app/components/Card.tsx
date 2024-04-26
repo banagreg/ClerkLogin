@@ -1,13 +1,13 @@
 import { cn } from '@/lib/utils';
 import { LucideIcon } from 'lucide-react';
-import React, { HTMLAttributes } from 'react'
+import React, { HTMLAttributes } from 'react';
 
 export interface CardProps {
 	label: string;
 	amount: string;
 	description: string;
 	icon: LucideIcon;
-}
+};
 
 const Card = (props: CardProps) => {
 	return (
@@ -24,8 +24,8 @@ const Card = (props: CardProps) => {
 				<p className='text-xs text-gray-500'>{props.description}</p>
 			</section>
 		</CardContent>
-	)
-}
+	);
+};
 
 export const CardContent = (props: HTMLAttributes<HTMLDivElement>) => {
 	return (

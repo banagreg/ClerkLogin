@@ -1,6 +1,6 @@
 'use client'
-import React from 'react'
-import { BarChart as BarGraph, ResponsiveContainer, XAxis, YAxis, Bar } from 'recharts'
+import React from 'react';
+import { BarChart as BarGraph, ResponsiveContainer, XAxis, YAxis, Bar } from 'recharts';
 
 const data = [
 	{
@@ -76,7 +76,7 @@ const BarChart = ({ }: BarChartProps) => {
 				<Bar dataKey={'total'} radius={[4, 4, 0, 0]} />
 			</BarGraph>
 		</ResponsiveContainer>
-	)
-}
+	);
+};
 
 export default BarChart
