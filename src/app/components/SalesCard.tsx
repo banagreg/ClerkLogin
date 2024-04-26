@@ -8,7 +8,6 @@ export interface SalesCardProps {
 };
 
 const SalesCard = (props: SalesCardProps) => {
-	console.log(props.name.split(" ")[1])
 	return (
 		<div className='flex flex-wrap justify-between gap-3'>
 			<section className='flex justify-between gap-3'>
