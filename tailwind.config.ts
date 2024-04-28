@@ -54,9 +54,11 @@ const config = {
         },
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        none: '0',
+        sm: '0.125rem',
+        md: '0.375rem',
+        lg: '0.75rem',
+        full: '9999px',
       },
       keyframes: {
         'accordion-down': {
@@ -71,6 +73,9 @@ const config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      screens: {
+        xs: { max: '640px' },
       },
     },
   },
